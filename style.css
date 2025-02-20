@@ -1,1 +1,71 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
 
+.navbar .logo {
+  max-width: 260px;
+}
+
+.navbar .logo img {
+  width: 100%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.lang-switcher img {
+  width: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("your-image.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 600;
+  z-index: 1;
+}
