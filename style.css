@@ -1,4 +1,4 @@
-/* Start Header */
+/* Header */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -48,7 +48,6 @@
 .hero {
   position: relative;
   height: 85vh;
-  background: url("assets/hero.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +71,7 @@
   z-index: 1;
 }
 
-/* Start Booking Reservation */
+/* Booking Reservation */
 .booking {
   display: flex;
   padding: 80px 0 20px 0;
@@ -86,5 +85,73 @@
     text-decoration: none;
     padding: 16px 32px;
     border-radius: 10px;
+  }
+}
+
+/* Packages */
+.packages {
+  padding: 20px 0 50px 0;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #7a7a7a;
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .package-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    .package {
+      position: relative;
+      max-width: 480px;
+      width: 100%;
+      height: 420px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 70%;
+        background: rgba(255, 255, 255, 0.5);
+      }
+
+      .content {
+        position: relative;
+        z-index: 2;
+
+        h3 {
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+
+        .btn {
+          display: inline-block;
+          margin-top: 10px;
+          padding: 10px 20px;
+          background: black;
+          color: white;
+          text-decoration: none;
+          font-size: 0.9rem;
+          border-radius: 5px;
+          font-weight: 600;
+        }
+      }
+    }
   }
 }
