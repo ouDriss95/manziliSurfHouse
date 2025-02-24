@@ -1,12 +1,14 @@
+/* Start Header */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: transparent;
+  position: absolute;
   padding: 20px;
-  position: fixed;
+  z-index: 9;
   width: 100%;
   top: 0;
-  z-index: 1000;
 }
 
 .navbar .logo {
@@ -38,15 +40,15 @@
 }
 
 .lang-switcher img {
-  width: 20px;
+  width: 18px;
   margin-left: 10px;
   cursor: pointer;
 }
 
 .hero {
   position: relative;
-  height: 100vh;
-  background: url("your-image.jpg") no-repeat center center/cover;
+  height: 85vh;
+  background: url("assets/hero.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,4 +70,21 @@
   font-size: 2.5rem;
   font-weight: 600;
   z-index: 1;
+}
+
+/* Start Booking Reservation */
+.booking {
+  display: flex;
+  padding: 80px 0 20px 0;
+  justify-content: center;
+  align-items: center;
+
+  & .booking-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 10px;
+  }
 }
